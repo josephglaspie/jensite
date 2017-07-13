@@ -14,7 +14,7 @@
 var express = require('express');
 var app = express();
 var logger = require('morgan');
-
+var port = 80;
 app.use(logger("combined"));
 
 // set the view engine to ejs
@@ -37,5 +37,5 @@ app.get('/contact', function(req, res) {
     res.render('pages/contact');
 });
 
-app.listen(8080);
-console.log('listening on http://127.0.0.1:8080');
+app.listen(port);
+console.log('listening on http://127.0.0.1:' + port);
