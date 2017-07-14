@@ -15,16 +15,27 @@ var express = require('express');
 var app = express();
 var logger = require('morgan');
 var port = 80;
+
 app.use(logger("combined"));
+//var path = require('path');
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
+
+
+
+app.use("/css", express.static(__dirname + "/css"));
+app.use("/js", express.static(__dirname + "/js"));
+app.use("/img", express.static(__dirname + "/img"));
+app.use("/fonts", express.static(__dirname + "/fonts"));
+app.use("/font-awesome", express.static(__dirname + "/font-awesome"));
+
 
 // use res.render to load up an ejs view file
 
 // index page 
 app.get('/', function(req, res) {
-    res.render('pages/index');
+    res.render('index.ejs');
 });
 
 // about page 
