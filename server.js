@@ -1,20 +1,9 @@
-// - views
-// ----- partials
-// ---------- footer.ejs
-// ---------- head.ejs
-// ---------- header.ejs
-// ----- pages
-// ---------- index.ejs
-// ---------- about.ejs
-// - package.json
-// - server.js
-
 // server.js
 // load the things we need
 var express = require('express');
 var app = express();
 var logger = require('morgan');
-var port = 80;
+var port = 8000;
 
 app.use(logger("combined"));
 //var path = require('path');
@@ -33,7 +22,7 @@ app.use("/font-awesome", express.static(__dirname + "/font-awesome"));
 
 // use res.render to load up an ejs view file
 
-// index page 
+// index page
 app.get('/', function(req, res) {
     res.render('index.ejs');
 });
