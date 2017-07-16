@@ -108,7 +108,28 @@
                                     <strong>House Hunting</strong>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="#" class="btn btn-light" data-toggle="modal" data-target="#houseHunting">Learn More</a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="houseHunting" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+<!--                                <div class="modal-header">
+
+                                    <h4 class="modal-title" id="myModalLabel">House Hunting</h4>
+                                </div> -->
+                                <div class="modal-body">
+                                    <h3>Are you in the market for a new home or realestate investment?</h3>
+                                </div>
+                             <!--   <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>-->
+                                </div>
+
+                            </div>
+                            </div>
+
+
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -117,11 +138,32 @@
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-compass fa-stack-1x text-primary"></i>
                             </span>
-                                <h4>
+                               <h4>
                                     <strong>Selling a Home</strong>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="#" class="btn btn-light" data-toggle="modal" data-target="#selling">Learn More</a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="selling" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+<!--                                <div class="modal-header">
+
+                                    <h4 class="modal-title" id="myModalLabel">House Hunting</h4>
+                                </div> -->
+                                <div class="modal-body">
+                                    <h3>Are you ready to sell your home?</h3>
+                                </div>
+                             <!--   <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>-->
+                                </div>
+
+                            </div>
+                            </div>
+
+
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -130,11 +172,32 @@
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-search fa-stack-1x text-primary"></i>
                             </span>
-                                <h4>
-                                    <strong>Apartment Finder</strong>
+                               <h4>
+                                    <strong>Apartment Locator</strong>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="#" class="btn btn-light" data-toggle="modal" data-target="#apartment">Learn More</a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="apartment" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+<!--                                <div class="modal-header">
+
+                                    <h4 class="modal-title" id="myModalLabel">House Hunting</h4>
+                                </div> -->
+                                <div class="modal-body">
+                                    <h3>Let me help you find the perfect apartment</h3>
+                                </div>
+                             <!--   <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>-->
+                                </div>
+
+                            </div>
+                            </div>
+
+
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -143,14 +206,35 @@
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-dollar fa-stack-1x text-primary"></i>
                             </span>
-                                <h4>
-                                    <strong>Looking for Leasers</strong>
+                              <h4>
+                                    <strong>Looking to Lease</strong>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="#" class="btn btn-light" data-toggle="modal" data-target="#lease">Learn More</a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="lease" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+<!--                                <div class="modal-header">
+
+                                    <h4 class="modal-title" id="myModalLabel">House Hunting</h4>
+                                </div> -->
+                                <div class="modal-body">
+                                    <h3>Ready to make extra income for you and your family?</h3>
+                                </div>
+                             <!--   <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>-->
+                                </div>
+
+                            </div>
+                            </div>
+
+
                             </div>
                         </div>
-                    </div>
+                        </div>
                     <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->
@@ -159,6 +243,11 @@
         </div>
         <!-- /.container -->
     </section>
+
+<!--test-->
+
+
+<!--test-->
 
     <!-- Callout -->
     <aside class="callout">
@@ -276,9 +365,45 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-<!--Test Map-->
-
-
+<style>
+/*     
+    .modal-header {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #0480be;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ }
+*/
+     .modal-body {
+    padding:9px 15px;
+    border-bottom:1px solid #b2b2b2;
+    background-color: none;
+    color:#999;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ }
+/*
+      .modal-footer {
+    padding:9px 15px;
+    border-bottom:1px solid #b2b2b2;
+    background-color: #b2b2b2;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ } */
+</style>
 
     <!-- Custom Theme JavaScript -->
     <script>
