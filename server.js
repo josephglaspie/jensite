@@ -3,7 +3,7 @@
 var express = require('express');
 var app = express();
 var logger = require('morgan');
-var port = 8000;
+var port = process.env.port || 8080;
 
 app.use(logger("combined"));
 //var path = require('path');
@@ -29,12 +29,12 @@ app.get('/', function(req, res) {
 
 // about page 
 app.get('/about', function(req, res) {
-    res.render('pages/about');
+    res.render('about.ejs');
 });
 
 // contact page 
 app.get('/contact', function(req, res) {
-    res.render('pages/contact');
+    res.render('contact.ejs');
 });
 
 app.listen(port);
